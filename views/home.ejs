@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Handmade Crocheted Hats, Clothing, and Accessories | Sweet Stitches by Karen</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Source+Sans+Pro" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+    
+    <% include partials/navbar %>
+    
+    <!--<div id="social-links">-->
+    <!--    <p><a href="https://facebook.com/"><i class="fa fa-facebook"></i></a></p>-->
+    <!--    <p><a href="https://etsy.com/"><i class="fa fa-etsy"></i></a></p>-->
+    <!--</div>-->
+    
+    <div id="landing">
+        <div id="banner">
+            <h1>Sweet Stitches By Karen</h1>
+            <h4>Hand-crafted, crocheted clothing for infants to adults</h4>
+            <!--<a href="/shop"><button id="">View Products</button></a>-->
+        </div>
+    </div>
+    
+    <div id="featured">
+        <h1>Featured Products</h1>
+        <!--<div id="products">-->
+            <% products.forEach(function(product){ %>
+                <a href="/shop/<%= product._id %>">
+                <div class="product" id="product_<% product.id %>">
+                    <img src="<%= product.image %>">
+                    <h2><%= product.name %></h2>
+                    <h4>$<%= product.price %></h4>
+                </div>
+                </a>
+            <% }); %>
+        <!--</div>-->
+    </div>
+    <div id="more">
+        <a href="/shop"><button id="view-more">More Products</button></a>
+    </div>
+
+</body>
+</html>

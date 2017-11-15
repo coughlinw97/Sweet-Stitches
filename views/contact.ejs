@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>About Sweet Stitches by Karen | Handmade Crocheted Hats, Clothes, and Accessores</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="forms.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+
+    <% include partials/navbar %>
+    
+    <div id="info">
+        <h1>Contact</h1>
+        <h4>For more information, or to request a custom product, please use this form to contact me.</h4>
+    </div>
+    
+    <div id="form">
+        <form action="/contact" method="POST">
+            <p>
+                <input type="text" name="name" placeholder="Your Name" required>
+            </p>
+            <p>
+                <input type="text" name="email" placeholder="Your Email" required>
+            </p>
+            <p>
+                <input type="text" name="subject" placeholder="Subject" required>
+            </p>
+            <p>
+                <textarea name="message" placeholder="Enter Your Message" rows="10" required></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Send">
+            </p>
+        </form>
+    </div>
+    
+</body>
+</html>

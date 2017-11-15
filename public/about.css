@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15pt;
+}
+
+#banner {
+    width: 100vw;
+    height: 40vh;
+    margin: 0;
+    padding-top: 10vh;
+    display: table;
+    background-image: url(https://source.unsplash.com/BoxcOWIhuGk);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+}
+
+#banner-inner h1 {
+    color: #71D9C0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+#about {
+    width: 80vw;
+    margin: auto;
+}
+
+#about-content {
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+}

@@ -1,0 +1,61 @@
+body {
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+#banner {
+    width: 80vw;
+    margin: auto;
+    padding: 10vh;
+    display: table;
+    background-color: white;
+}
+
+#banner-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#banner h1, h4 {
+    padding: 0 0 20px 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+#storefront {
+    background-color: white;
+    width: 80vw;
+    margin: auto;
+}
+
+.product {
+    width: 33%;
+    /*height: 300px;*/
+    float: left;
+    /*padding: 50px;*/
+    text-align: center;
+    background-color: white;
+    /*border: black 1px;*/
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#storefront a {
+    color: #7DC4B3;
+}
+
+#storefront a:hover {
+    text-decoration: none;
+}
+
+.product-img {
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 700px) {
+    .product {
+        width: 100%;
+    }
+}

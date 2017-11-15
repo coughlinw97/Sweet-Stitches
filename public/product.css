@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#product {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.product-img {
+    width: 300px;
+    height: 300px;
+    margin-top: 10vh;
+}
+
+.product-about {
+    margin-top: 10vh;
+}
+
+#add-to-cart {
+    padding: 10px 15px 10px 15px;
+    background-color: #7DC4B3;
+    border: #3B8C79 1px solid;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+#add-to-cart:hover {
+    font-weight: bold;
+}

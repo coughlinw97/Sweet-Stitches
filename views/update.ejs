@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Update Product</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="forms.css">
+        <link rel="stylesheet" type="text/css" href="navbar.css">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW">
+    </head>
+    <body>
+        <div id="form">
+            <form action="/update" method="POST">
+                <p>
+                    <input type="text" class="form-control" name="id" placeholder="Product Id of Product to Update" required>
+                </p>
+                <p>
+                    <input type="text" class="form-control" placeholder="Product name" name="newName" required>
+                </p>
+                <p>
+                    <input type="text" class="form-control" placeholder="Product ID" name="newId" required>
+                </p>
+                <p>
+                    <input type="text" class="form-control" placeholder="Product Size" name="newSize" required>
+                </p>
+                <p>
+                    <input type="text" class="form-control" placeholder="Product price" name="newPrice" required>
+                </p>
+                <p>
+                    <input type="text" class="form-control" placeholder="Product image url" name="newImage" required>
+                </p>
+                <p>
+                    Featured:<br />
+                    <input type="radio" name="newFeatured" value="Yes"> Yes<br />
+                    <input type="radio" name="newFeatured" value="No"> No<br />
+                </p>
+                <p>
+                    <textarea rows="5" class="form-control" placeholder="Enter product desciption here" name="newDesc" required></textarea>
+                </p>
+                <p>
+                    <input type="submit" class="btn btn-success" value="Update">
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

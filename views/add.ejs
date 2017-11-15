@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Add Product</title>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="forms.css">
+        <link rel="stylesheet" type="text/css" href="navbar.css">
+        <META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW">
+    </head>
+    <body>
+        <div id="form">
+            <form action="/shop" method="post">
+                <p>
+                    <input type="text" class="form-control" placeholder="Product name" name="name" required>
+                </p>
+                <p>
+                    <input type="text" class="form-control" placeholder="Product ID" name="id" required>
+                </p>
+                <p>
+                    <input type="text" class="form-control" placeholder="Product Size" name="size" required>
+                </p>
+                <p>
+                    <input type="text" class="form-control" placeholder="Product price" name="price" required>
+                </p>
+                <p>
+                    <input type="text" class="form-control" placeholder="Product image url" name="image" required>
+                </p>
+                <p>
+                    Featured:<br />
+                    <input type="radio" name="featured" value="Yes"> Yes<br />
+                    <input type="radio" name="featured" value="No"> No<br />
+                </p>
+                <p>
+                    <textarea rows="5" class="form-control" placeholder="Enter product desciption here" name="desc" required></textarea>
+                </p>
+                <p>
+                    <input type="submit" class="btn btn-success" value="Add Product"> 
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

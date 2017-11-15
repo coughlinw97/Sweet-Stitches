@@ -1,0 +1,185 @@
+body {
+    font-family: 'Lora', serif;
+    color: white;
+    overflow-x: hidden;
+    margin: 0px;
+    background-color: #70D938;
+}
+
+#navbar {
+    width: 100vw;
+    height: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+#inner-nav {
+    display: table;
+    margin: 0 auto;
+}
+
+#navbar h4 {
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+h4 a {
+    color: #4c4c4c;
+}
+
+h4 a:hover {
+    color: #606060;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding: 5px 20px 0px 20px;
+    width: 100px;
+}
+
+.nav-link {
+    color: #4c4c4c;
+}
+
+.nav-link:hover {
+    color: #606060;
+    text-decoration: none;
+}
+
+.active {
+    border-bottom: solid 2px #4c4c4c;;
+}
+
+#landing {
+    width: 80vw;
+    height: 50vh;
+    display: table;
+    text-align: center;
+    margin: auto;
+    font-family: 'Lora', serif;
+    background: url('https://source.unsplash.com/wFT93lgAwWE');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#banner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#banner h1 {
+    font-size: 4em;
+}
+
+.jumbotron {
+    padding-left: 20px;
+}
+
+.product {
+    width: 300px;
+    height: 300px;
+    float: left;
+    padding: 50px;
+    text-align: center;
+}
+
+.product a {
+    color: black;
+}
+
+.product a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.product-page {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+}
+
+#about {
+    height: 100vh;
+    font-family: 'Lora', serif;
+    text-align: center;
+    /*background-image: url('https://source.unsplash.com/CNjfgzoY8JU');*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    color: black;
+}
+
+.form {
+    border: solid #cccccc 1px;
+    border-radius: 4px;
+    padding: 20px;
+    /*text-align: center;*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+#footer {
+    background-color: #ededed;
+    width: 100vw;
+    height: 100px;
+    border-top: solid #d6d6d6 1px;
+    font-size: .75em;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 10px;
+}
+
+#footer a {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+#facebook {
+    float: left;
+    padding: 0px 10px 10px 10px;
+}
+
+#etsy {
+    float: left;
+    padding: 0px 10px 10px 10px;
+}
+
+a[href="https://facebook.com/"] {
+    color: #3B5998;
+}
+
+a[href="https://facebook.com/"]:hover {
+    color: #3b5998;
+}
+
+a[href="https://etsy.com/"] {
+    color: #eb6d20;
+}
+
+a[href="https://etsy.com/"]:hover {
+    color: #eb6d20;
+}
+
+#footer i {
+    padding-right: 5px;
+}
+
+#copyright {
+    float: right;
+}

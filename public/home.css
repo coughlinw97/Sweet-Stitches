@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+}
+
+#social-links {
+    width: 30px;
+    position: fixed;
+    margin-top: 25vh;
+    /*padding-right: 10px;*/
+    text-align: center;
+    float: right;
+}
+
+#social-links a {
+    color: white;
+}
+
+#landing {
+    width: 100vw;
+    height: 40vh;
+    display: table;
+    margin: auto;
+    padding: 10vh 0 5vh 0;
+    background-image: url(https://source.unsplash.com/wFT93lgAwWE);
+    background-size: cover;
+    background-position: center;
+}
+
+#banner {
+    width: 50vw;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: white;
+}
+
+#banner h1 {
+    color: #71D9C0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+#featured {
+    width: 80vw;
+    height: 400px;
+    margin: 5vh auto;
+    text-align: center;
+    background-color: white;
+}
+
+#products {
+    width: 100%;
+    margin: auto;
+}
+
+.product {
+    width: 33%;
+    /*height: 300px;*/
+    display: inline-block;
+    float: left;
+    margin: 20px;
+    /*padding: 50px;*/
+    text-align: center;
+    background-color: white;
+    /*border: black 1px;*/
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.product:hover {
+    color: #3B8C79;
+}
+
+#featured a {
+    color: #7DC4B3;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+}
+
+#more {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+#view-more {
+    padding: 10px 15px 10px 15px;
+    background-color: #7DC4B3;
+    border: #3B8C79 1px solid;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+#view-more:hover {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    .product {
+        width: 100%;
+    }
+}

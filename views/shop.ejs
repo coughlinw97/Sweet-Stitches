@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Shop Handmade Crocheted Hats, Clothing, and Accessories | Sweet Stitches by Karen</title>
+        <link rel="stylesheet" type="text/css" href="shop.css">
+        <link rel="stylesheet" type="text/css" href="navbar.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Source+Sans+Pro" rel="stylesheet">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <% include partials/navbar %>
+
+        <div id="banner">
+            <div id="banner-inner">
+                <h1>Shop</h1>
+                <h4>Shop through our hand-crafted items.  These are the products currently available.</h4>
+            </div>
+        </div>
+        
+        <div id="storefront">
+            <% products.forEach(function(product){ %>
+                <a href="/shop/<%= product._id %>">
+                <div class="product" id="product_<% product.id %>">
+                    <img src="<%= product.image %>" class="product-img">
+                    <h2><%= product.name %></h2>
+                    <h4>$<%= product.price %></h4>
+                </div>
+                </a>
+            <% }); %>
+        </div>
+        
+    </body>
+</html>
