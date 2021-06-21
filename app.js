@@ -3,7 +3,6 @@ var app = express();
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
 var methodOverride = require('method-override');
-// var nodeMailer = require('nodemailer');
 
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
@@ -100,32 +99,6 @@ app.post("/shop", function(req, res){
     });
 });
 
-app.post('/contact', function(req, res){
-    // var transporter = nodeMailer.createTransport(smtpTransport({
-    //     host: 'smtp.gmail.com',
-    //     port: 465,
-    //     secure: true,
-    //     auth: {
-    //         user: 'coughlinw97@gmail.com',
-    //         pass: 'goliath2010'
-    //     }
-    // }));
-    // var mailOptions = {
-    //     to: 'coughlinw97@gmail.com',
-    //     subject: req.body.subject,
-    //     message: req.body.message
-    // };
-    // transporter.sendMail(mailOptions, (err) => {
-    //     if(err){
-    //         console.log(err);
-    //     } else {
-    //         console.log('message sent');
-    //     }
-    // });
-    // transporter.close();
-    // res.redirect('/contact');
-});
-
 app.post("/remove", function(req, res){
     Product.findOneAndRemove({id: req.body.id}, function(err){
         if(err){
@@ -138,13 +111,6 @@ app.post("/remove", function(req, res){
 });
 
 app.post('/update', function(req, res){
-    // var name = req.body.newName;
-    // var id = req.body.newId;
-    // var image = req.body.newImage;
-    // var price = req.body.newPrice;
-    // var size = req.body.newSize;
-    // var desc = req.body.newDesc;
-    // var featured = req.body.newFeatured;
     
     Product.findOneAndUpdate({id: req.body.id}, {
         name: req.body.newName,
